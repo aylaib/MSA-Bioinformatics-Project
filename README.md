@@ -8,9 +8,6 @@ L'objectif principal est de comparer deux approches fondamentales : l'**approche
 
 Le script `Comp.py` analyse les données de temps d'exécution des deux principales méthodes et génère le graphique comparatif suivant, démontrant la différence de performance en termes de vitesse entre l'approche progressive et SAGA.
 
-*(Astuce : Exécutez `python Comp.py`, sauvegardez le graphique généré en tant que `comparison_plot.png` dans ce dossier, et décommentez la ligne ci-dessous en la remplaçant par le bon nom de fichier.)*
-
-![Comparaison des temps d'exécution](./comparison_plot.png)
 
 ## 🤖 Algorithmes Implémentés
 
