@@ -1,69 +1,54 @@
-# Implémentation et Comparaison d'Algorithmes d'Alignement Multiple de Séquences
-
-Ce projet, réalisé dans le cadre du module Bio-Algorithmique (Master 1 Bio-Informatique, USTHB), explore l'implémentation et l'analyse de performance de différentes méthodes pour l'alignement multiple de séquences (MSA).
-
-L'objectif principal est de comparer deux approches fondamentales : l'**approche progressive** (heuristique) et l'**approche itérative** basée sur un algorithme génétique (SAGA).
-
-## 📊 Analyse Comparative des Performances
-
-Le script `Comp.py` analyse les données de temps d'exécution des deux principales méthodes et génère le graphique comparatif suivant, démontrant la différence de performance en termes de vitesse entre l'approche progressive et SAGA.
-
-
-## 🤖 Algorithmes Implémentés
-
-Ce dépôt contient une collection de scripts Python, chacun démontrant un algorithme ou un concept clé :
-
-1.  **`Needelman.py` : Alignement par Paire (Needleman-Wunsch)**
-    - Implémente l'algorithme de programmation dynamique classique pour l'alignement global de deux séquences.
-    - Utilise la matrice de similarité **BLOSUM62** et une pénalité de gap linéaire.
-    - Génère des séquences protéiques aléatoires pour les tests.
-
-2.  **`ProgressiveMultiple.py` : Alignement Multiple Progressif**
-    - Une implémentation d'une méthode heuristique rapide pour l'alignement multiple.
-    - Aligne progressivement les séquences en se basant sur un profil qui est mis à jour à chaque étape.
-    - Très efficace en temps de calcul, c'est une approche similaire à celle utilisée par des outils comme ClustalW.
-
-3.  **`SAGA.py` : Alignement par Algorithme Génétique (SAGA)**
-    - Implémente une méthode itérative qui utilise les principes de l'évolution (sélection, croisement, mutation) pour trouver un alignement de haute qualité.
-    - Vise à optimiser un score d'alignement sur plusieurs générations.
-    - Bien que plus lent, cet algorithme peut potentiellement trouver de meilleurs alignements pour des cas complexes.
-
-4.  **`Comp.py` : Script d'Analyse et de Visualisation**
-    - Ne réalise pas d'alignement.
-    - Prend en entrée des données de performance (temps d'exécution) et utilise `matplotlib` pour visualiser la comparaison entre les méthodes.
-
-## 🚀 Comment l'Exécuter
-
-Chaque script est autonome et peut être exécuté individuellement.
-
-1.  **Clonez le dépôt :**
+# Multiple Sequence Alignment Algorithms Implementation and Comparison
+This project, carried out as part of the Bio-Algorithmics module (Master 1 Bioinformatics, USTHB), explores the implementation and performance analysis of different methods for multiple sequence alignment (MSA).
+The main objective is to compare two fundamental approaches: the **progressive approach** (heuristic) and the **iterative approach** based on a genetic algorithm (SAGA).
+## 📊 Comparative Performance Analysis
+The `Comp.py` script analyzes the execution time data of the two main methods and generates the following comparative graph, demonstrating the performance difference in terms of speed between the progressive approach and SAGA.
+## 🤖 Implemented Algorithms
+This repository contains a collection of Python scripts, each demonstrating a key algorithm or concept:
+1.  **`Needelman.py` : Pairwise Alignment (Needleman-Wunsch)**
+    - Implements the classic dynamic programming algorithm for global alignment of two sequences.
+    - Uses the **BLOSUM62** similarity matrix and a linear gap penalty.
+    - Generates random protein sequences for testing.
+2.  **`ProgressiveMultiple.py` : Progressive Multiple Alignment**
+    - An implementation of a fast heuristic method for multiple alignment.
+    - Progressively aligns sequences based on a profile that is updated at each step.
+    - Very efficient in computational time, this is an approach similar to that used by tools like ClustalW.
+3.  **`SAGA.py` : Genetic Algorithm Alignment (SAGA)**
+    - Implements an iterative method that uses evolutionary principles (selection, crossover, mutation) to find a high-quality alignment.
+    - Aims to optimize an alignment score over multiple generations.
+    - Although slower, this algorithm can potentially find better alignments for complex cases.
+4.  **`Comp.py` : Analysis and Visualization Script**
+    - Does not perform alignment.
+    - Takes performance data (execution time) as input and uses `matplotlib` to visualize the comparison between methods.
+## 🚀 How to Run
+Each script is standalone and can be executed individually.
+1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/VOTRE_NOM_UTILISATEUR/MSA-Bioinformatics-Project.git
+    git clone https://github.com/YOUR_USERNAME/MSA-Bioinformatics-Project.git
     cd MSA-Bioinformatics-Project
     ```
-2.  **Installez les dépendances :**
+2.  **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
-3.  **Exécutez le script de votre choix :**
-    - Pour l'alignement par paire :
+3.  **Run the script of your choice:**
+    - For pairwise alignment:
       ```bash
       python Needelman.py
       ```
-    - Pour l'alignement progressif :
+    - For progressive alignment:
       ```bash
       python ProgressiveMultiple.py
       ```
-    - Pour l'alignement avec SAGA :
+    - For alignment with SAGA:
       ```bash
       python SAGA.py
       ```
-    - Pour générer le graphique de comparaison :
+    - To generate the comparison graph:
       ```bash
       python Comp.py
       ```
-Chaque script vous guidera en vous demandant les paramètres nécessaires (taille des séquences, nombre de séquences, etc.).
-
-## 📚 Documents de Référence
-- **[Rapport Complet du Projet](./rapport_alignement_multiple.pdf)** : Ce document contient l'analyse théorique détaillée, la méthodologie, les résultats des tests et la conclusion du projet.
-- **[Énoncé du Projet](./enonce_projet.pdf)** : Le cahier des charges original du mini-projet.
+Each script will guide you by asking for the necessary parameters (sequence size, number of sequences, etc.).
+## 📚 Reference Documents
+- **[Complete Project Report](./rapport_alignement_multiple.pdf)** : This document contains the detailed theoretical analysis, methodology, test results and project conclusion.
+- **[Project Statement](./enonce_projet.pdf)** : The original specifications of the mini-project.
