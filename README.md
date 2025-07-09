@@ -49,6 +49,13 @@ Each script is standalone and can be executed individually.
       python Comp.py
       ```
 Each script will guide you by asking for the necessary parameters (sequence size, number of sequences, etc.).
+## 📌 Citation
+If you use this project, please cite it as:
+
+Ayoub Laib (2025), *Multiple Sequence Alignment Algorithms Implementation and Comparison*, GitHub repository: https://github.com/aylaib/MSA-Bioinformatics-Project
+
+
+
 ## 📚 Reference Documents
 - **[Complete Project Report](./rapport_alignement_multiple.pdf)** : This document contains the detailed theoretical analysis, methodology, test results and project conclusion.
 - **[Project Statement](./enonce_projet.pdf)** : The original specifications of the mini-project.
